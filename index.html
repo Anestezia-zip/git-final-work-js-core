@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="timer-clock"><span class="min">01</span>:<span class="sec">00</span></div>
+
+    <div class="buttons">
+        <button type="button" class="red-btn start">Start game!</button>
+        <button type="button" class="red-btn check" disabled>Check result</button>
+        <button type="button" class="red-btn new-game">New game</button>
+    </div>
+
+    <div class="question-window">
+        <hr>
+        <h2>You still have time, you sure?<span class="timer-clock small-timer">01:00</span></h2>
+        <hr>
+        <button class="close-btn" type="button">Close</button>
+        <button class="check-btn" type="button">Check</button>
+    </div>
+
+    <div class="success-window">
+        <hr>
+        <h2>Woohoo, well done, you did it!</h2>
+        <hr>
+        <button class="close-btn" type="button">Close</button>
+    </div>
+
+    <div class="loose-window">
+        <hr>
+        <h2>It's a pity, but you lost</h2>
+        <hr>
+        <button class="close-btn" type="button">Close</button>
+    </div>
+
+    <div class="container">
+         <div id="start" class="number-box">
+             <div class="number" id="num1"></div>
+             <div class="number" id="num2"></div>
+             <div class="number" id="num3"></div>
+             <div class="number" id="num4"></div>
+             <div class="number" id="num5"></div>
+             <div class="number" id="num6"></div>
+             <div class="number" id="num7"></div>
+             <div class="number" id="num8"></div>
+             <div class="number" id="num9"></div>
+             <div class="number" id="num10"></div>
+             <div class="number" id="num11"></div>
+             <div class="number" id="num12"></div>
+             <div class="number" id="num13"></div>
+             <div class="number" id="num14"></div>
+             <div class="number" id="num15"></div>
+             <div class="number" id="num16"></div>
+        </div>
+
+        <div class="number-box number-box2">
+            <div id="gamefield">
+                <div id="droparea">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                        <div id="drop1" class="droppable"></div>
+                        </td>
+                        <td>
+                        <div id="drop2" class="droppable"></div>
+                        </td>
+                        <td>
+                        <div id="drop3" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop4" class="droppable"></div> 
+                        </td>
+                    </tr>         
+                    <tr>
+                        <td>
+                        <div id="drop5" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop6" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop7" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop8" class="droppable"></div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div id="drop9" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop10" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop11" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop12" class="droppable"></div> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <div id="drop13" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop14" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop15" class="droppable"></div> 
+                        </td>
+                        <td>
+                        <div id="drop16" class="droppable"></div> 
+                        </td>
+                    </tr>
+                </table>
+                </div>  
+        </div>
+        
+    </div>
+</div>
+
+
+
+    <script src="./jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
